@@ -1,0 +1,31 @@
+seed: 2441406995705867619
+
+# Knowledge Graph
+entities_file: 'drive/MyDrive/Diploma/kinship/entities.txt'
+relations_file: 'drive/MyDrive/Diploma/kinship/relations.txt'
+train_triplets_path: 'drive/MyDrive/Diploma/kinship/train.txt'
+test_triplets_path: 'drive/MyDrive/Diploma/kinship/test.txt'
+add_reverse_relations: True
+only_relations: False
+static_relation: stop
+
+# Training Settings
+batch_size: 512
+num_epochs: 1000
+lr: 0.0001
+
+# RL
+rl_method: REINFORCE
+max_rollout: 20
+normalize_reward: False
+len_penalty: True
+entropy_coef: 0.0
+gamma: 0.99
+
+# Reward Shaping
+rs_coef: 0.2
+
+# Beam Search
+beam_size: 128
+num_beam_steps: 10
+num_rollouts: 100
